@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Helvetica-BQ', sans-serif;
+    src: url(../fonts/HelveticaInseratBQ-Regular.woff2);
+    font-style: normal;
+    font-size: 400;
+}
+
+@font-face {
+    font-family: 'Helvetica-Bold', sans-serif;
+    src: url(../fonts/HelvFE-Bold.woff2);
+    font-style: normal;
+    font-size: 700;
+}
+
+$gray: #5C5C5E;
+$gradient: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+$black: #070707;

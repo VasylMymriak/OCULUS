@@ -1,0 +1,302 @@
+@media(max-width:1220px){
+    footer{
+        .nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu{
+            display: none;
+        }
+    }
+}
+@media(max-width:1025px) {
+    .equipment {
+        &__box {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media(max-width:992px) {
+    .menu {
+        margin-top: 0;
+        margin-left: -15px;
+        padding: 50px 10px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 300px;
+        top: 80px;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: #000;
+        transform: translateX(-110%);
+        transition: transform 1s;
+
+        &__link {
+            color: #fff;
+        }
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu--active {
+        transform: translateX(0%);
+    }
+
+    .tabs {
+        display: block;
+
+        &__btn {
+            display: block;
+            column-count: 2;
+        }
+
+        &__btn-item {
+            display: block;
+        }
+    }
+
+    .game {
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        &__item {
+            max-width: none;
+        }
+    }
+
+    .accessories {
+        &__inner {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media(max-width:820px) {
+    .contact {
+        &__inner {
+            display: block;
+        }
+
+        &__form {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(max-width:770px) {
+    .nav {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .top {
+        &__title {
+            font-size: 66px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+        }
+
+        &__text {
+            margin-bottom: 40px;
+        }
+    }
+
+    .features {
+        &__titles {
+            display: block;
+        }
+    }
+
+    .accessories {
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item {
+            max-width: 100%;
+            height: auto;
+        }
+
+        &__item-link {
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width:620px) {
+    .btn-text {
+        padding: 10px 65px;
+    }
+
+    .btn-price {
+        padding: 10px 65px;
+    }
+
+    .tabs {
+        &__content-item {
+            display: block;
+            height: 0;
+            position: static;
+        }
+        &__content-item--active{
+            height: auto;
+        }
+
+        &__btn {
+            margin-bottom: 20px;
+        }
+
+        &__content-img {
+            margin-bottom: 20px;
+        }
+
+        &__content-box {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            width: 55%;
+            height: 170px;
+            margin: 0 auto;
+        }
+    }
+
+    .game {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__item {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    .buy {
+        &__bg {
+            font-size: 400px;
+            line-height: 397px;
+        }
+
+        &__img {
+            width: 250px;
+            height: 250px;
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+
+    }
+
+    .equipment {
+        &__box {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        &__box-item--one {
+            grid-row: 1/1;
+        }
+    }
+
+    .promo {
+        &__wrapper {
+            min-height: 300px;
+        }
+    }
+
+    footer{
+        .nav{
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+        }
+        .social{
+            order: -1;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media(max-width:470px) {
+    .buy-btn {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .buy {
+        &__bg {
+            font-size: 250px;
+            line-height: 210px;
+        }
+
+        &__img {
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .accessories {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+}
+
+@media(max-width:450px) {
+    .menu {
+        margin-left: -10px;
+        width: 100%;
+    }
+    .top {
+        text-align: center;
+
+        &__title {
+            font-size: 55px;
+        }
+
+        &__subtitle {
+            justify-content: center;
+        }
+    }
+
+    .tabs {
+        &__btn {
+            column-count: 1;
+        }
+
+        .video {
+            width: auto;
+            height: 220px;
+        }
+    }
+
+    .equipment {
+        &__box-title {
+            font-size: 25px;
+        }
+    }
+}
+
+@media(max-width:320px) {
+    .top {
+        &__title {
+            font-size: 45px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+        }
+    }
+}
